@@ -1,6 +1,6 @@
 Road damage detection and classification 
 
-1. training/testing dataset in /data folder
+1. training/testing dataset in ./data folder
 2. pretrained models in /models fodler
 3. other utility functions in ./utils folder
 

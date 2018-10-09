@@ -142,4 +142,9 @@ def run_model(test_images_dir):
               line_thickness=8)
           image_to_write = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
           cv2.imwrite(os.path.join(test_images_dir, 'results') + '/example_' + str(ind) + '.jpg', image_to_write)
- 
+
+print("Running model on training examples . . .")
+example_bounding_boxes() 
+test_images_dir = os.path.join(os.getcwd(), 'test_runs', 'test_images')
+print("Running model on test images in " + str(test_images_dir) + " . . .")
+run_model(test_images_dir)
